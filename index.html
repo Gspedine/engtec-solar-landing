@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Engtec Soluções – Energia Solar Residencial</title>
+  <meta name="description" content="Instale energia solar residencial com a Engtec Soluções, economize na conta de luz e aumente o valor do seu imóvel. Atendimento especializado via WhatsApp e e-mail." />
+
+  <!-- Fontes e ícones -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ==================================================
+       BOTÃO FLUTUANTE WHATSAPP
+       - Fica sempre visível no canto inferior direito
+  =================================================== -->
+  <div class="whatsapp-float">
+    <!-- TODO: Ajustar número de telefone -->
+    <a
+      href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20um%20orçamento%20de%20energia%20solar%20residencial."
+      target="_blank"
+      aria-label="Chamar no WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>Fale agora</span>
+    </a>
+  </div>
+
+  <!-- ==================================================
+       HEADER
+  =================================================== -->
+  <header class="header">
+    <div class="container header-inner">
+      <!-- LOGO -->
+      <a href="#topo" class="logo">
+        <div class="logo-mark">E</div>
+        <div class="logo-text">
+          <span>Engtec Soluções</span>
+          <span>Engenharia Elétrica & Solar</span>
+        </div>
+      </a>
+
+      <!-- NAVEGAÇÃO -->
+      <nav id="nav" class="nav">
+        <a href="#beneficios">Benefícios</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#depoimentos">Clientes</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <!-- CTA HEADER -->
+      <!-- TODO: Ajustar número de telefone -->
+      <a
+        href="https://wa.me/5511999999999?text=Olá,%20quero%20instalar%20energia%20solar%20na%20minha%20residência."
+        target="_blank"
+        class="btn-header"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+        Orçamento rápido
+      </a>
+
+      <!-- MENU MOBILE -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main id="topo">
+    <!-- ==================================================
+         HERO (COM BACKGROUND + ANIMAÇÕES)
+    =================================================== -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-noise"></div>
+
+      <div class="container hero-grid">
+        <!-- TEXTO PRINCIPAL -->
+        <div class="hero-copy reveal">
+          <span class="hero-kicker">
+            <i class="fa-solid fa-sun"></i>
+            Energia solar residencial Engtec
+          </span>
+
+          <h1>
+            Transforme o sol em
+            <span>economia real</span>
+            na sua conta de luz.
+          </h1>
+
+          <p class="hero-sub">
+            Projeto, instalação e homologação com acompanhamento de engenheiro eletricista.
+            Você envia sua conta de luz, a Engtec faz todo o resto.
+          </p>
+
+          <!-- MINI MÉTRICAS EM LINHA -->
+          <div class="hero-metrics">
+            <div class="metric">
+              <strong data-counter data-target="95">0</strong><span>%</span>
+              <p>redução na conta de energia</p>
+            </div>
+            <div class="metric">
+              <strong data-counter data-target="25">0</strong><span>+</span>
+              <p>projetos elétricos e solares</p>
+            </div>
+            <div class="metric">
+              <strong data-counter data-target="3">0</strong><span>–5</span>
+              <p>anos payback médio</p>
+            </div>
+          </div>
+
+          <!-- CTAs HERO -->
+          <div class="hero-cta">
+            <!-- TODO: Ajustar número de telefone -->
+            <a
+              href="https://wa.me/5511999999999?text=Olá,%20quero%20um%20estudo%20completo%20para%20energia%20solar%20na%20minha%20casa."
+              target="_blank"
+              class="btn-primary"
+            >
+              <span class="btn-primary-glow"></span>
+              <i class="fa-brands fa-whatsapp"></i>
+              Quero falar com um especialista
+            </a>
+
+            <a href="#contato" class="btn-ghost">
+              <i class="fa-regular fa-envelope"></i>
+              Receber proposta por e-mail
+            </a>
+          </div>
+
+          <!-- SELLOS DE CONFIANÇA -->
+          <div class="hero-trust">
+            <span><i class="fa-solid fa-shield"></i> Projeto com ART e laudos técnicos</span>
+            <span><i class="fa-solid fa-bolt"></i> Adequação elétrica dentro das normas ABNT</span>
+          </div>
+        </div>
+
+        <!-- CARD LATERAL COM BACKGROUND E ANIMAÇÃO TILT -->
+        <div class="hero-visual parallax-tilt reveal">
+          <div class="hero-card">
+            <div class="hero-card-overlay"></div>
+
+            <div class="hero-card-top">
+              <span class="hero-card-badge">
+                <i class="fa-solid fa-solar-panel"></i>
+                Projeto em análise
+              </span>
+
+              <div class="hero-card-kwh">
+                <span>Conta atual</span>
+                <strong>R$ 620,00</strong>
+                <small>estimativa de um cliente real</small>
+              </div>
+            </div>
+
+            <div class="hero-card-bottom">
+              <div class="hero-card-line">
+                <span>Após energia solar</span>
+                <strong>R$ 55,00</strong>
+              </div>
+              <div class="hero-card-line">
+                <span>Economia mensal</span>
+                <strong class="hero-card-highlight">~ R$ 565,00</strong>
+              </div>
+
+              <div class="hero-card-footer">
+                <div>
+                  <small>Simulação Engtec</small>
+                  <span>Payback médio em 3 a 5 anos</span>
+                </div>
+                <!-- TODO: Ajustar número de telefone -->
+                <a
+                  href="https://wa.me/5511999999999?text=Olá,%20quero%20uma%20simulação%20parecida%20com%20essa%20para%20minha%20conta%20de%20luz."
+                  target="_blank"
+                  class="hero-card-cta"
+                >
+                  Ver simulação para minha casa
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CHIPS FLOTANTES -->
+          <div class="hero-floating">
+            <div class="chip">
+              <i class="fa-solid fa-clipboard-check"></i>
+              Levantamento online em até 24h
+            </div>
+            <div class="chip">
+              <i class="fa-solid fa-house-signal"></i>
+              Dimensionamento sob medida para sua residência
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         BENEFÍCIOS
+    =================================================== -->
+    <section id="beneficios">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">Por que agora?</span>
+          <h2>Energia solar que cabe no seu telhado e no seu bolso</h2>
+          <p>
+            A Engtec une engenharia elétrica, tecnologia fotovoltaica e atendimento consultivo
+            para que você invista com segurança e previsibilidade financeira.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <article class="benefit-card reveal">
+            <div class="benefit-icon"><i class="fa-solid fa-coins"></i></div>
+            <h3>Economia imediata na conta</h3>
+            <p>
+              Gere sua própria energia e reduza em até 95% a tarifa mensal.
+              O dinheiro que iria para a concessionária passa a ficar no seu bolso.
+            </p>
+            <ul>
+              <li>Proteção contra aumentos na tarifa</li>
+              <li>Créditos de energia na rede</li>
+            </ul>
+          </article>
+
+          <article class="benefit-card reveal">
+            <div class="benefit-icon"><i class="fa-solid fa-house-circle-check"></i></div>
+            <h3>Valorização do imóvel</h3>
+            <p>
+              Imóveis com sistema solar instalado podem valer até 20% a mais,
+              além de ter maior facilidade de venda.
+            </p>
+            <ul>
+              <li>Infraestrutura moderna</li>
+              <li>Atrativo para compradores exigentes</li>
+            </ul>
+          </article>
+
+          <article class="benefit-card reveal">
+            <div class="benefit-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Segurança e conformidade</h3>
+            <p>
+              Projeto assinado por engenheiro eletricista, com ART, laudos
+              e adequação às normas da ABNT e concessionária local.
+            </p>
+            <ul>
+              <li>Documentação técnica completa</li>
+              <li>Instalação supervisionada</li>
+            </ul>
+          </article>
+
+          <article class="benefit-card reveal">
+            <div class="benefit-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3>Projeto 360°</h3>
+            <p>
+              Da análise da sua conta de luz ao sistema ligado e gerando energia,
+              você tem a Engtec em todas as etapas.
+            </p>
+            <ul>
+              <li>Projeto, instalação e testes</li>
+              <li>Homologação com a concessionária</li>
+            </ul>
+          </article>
+
+          <article class="benefit-card reveal">
+            <div class="benefit-icon"><i class="fa-solid fa-leaf"></i></div>
+            <h3>Energia limpa e sustentável</h3>
+            <p>
+              Reduza significativamente sua emissão de CO₂ e contribua ativamente
+              para um futuro mais sustentável.
+            </p>
+            <ul>
+              <li>Fonte renovável e silenciosa</li>
+              <li>Impacto positivo no meio ambiente</li>
+            </ul>
+          </article>
+
+          <article class="benefit-card reveal">
+            <div class="benefit-icon"><i class="fa-solid fa-user-tie"></i></div>
+            <h3>Acompanhamento especializado</h3>
+            <p>
+              Atendimento consultivo, explicando cada etapa de forma simples,
+              para você decidir com clareza.
+            </p>
+            <ul>
+              <li>Suporte antes, durante e depois</li>
+              <li>Equipe técnica experiente</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         COMO FUNCIONA (PROCESSO)
+    =================================================== -->
+    <section id="como-funciona">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">Passo a passo</span>
+          <h2>Do envio da conta de luz à energia solar ligada</h2>
+          <p>
+            Veja como é simples iniciar seu projeto com a Engtec. Você não precisa entender de elétrica,
+            nós cuidamos de tudo para você.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <!-- PASSOS -->
+          <div class="steps">
+            <div class="step reveal">
+              <div class="step-number">1</div>
+              <div>
+                <h3>Envio da conta de luz</h3>
+                <p>
+                  Você manda a foto ou PDF da conta pelo WhatsApp ou e-mail. Analisamos seu
+                  consumo, padrão de uso e características do imóvel.
+                </p>
+              </div>
+            </div>
+
+            <div class="step reveal">
+              <div class="step-number">2</div>
+              <div>
+                <h3>Estudo e simulação de economia</h3>
+                <p>
+                  Dimensionamos o sistema ideal, estimamos quanto você vai economizar mês a mês
+                  e apresentamos um estudo claro, com payback previsto.
+                </p>
+              </div>
+            </div>
+
+            <div class="step reveal">
+              <div class="step-number">3</div>
+              <div>
+                <h3>Projeto técnico e aprovação</h3>
+                <p>
+                  Elaboramos o projeto elétrico, ART, memoriais e protocolamos tudo
+                  junto à concessionária para aprovação e homologação.
+                </p>
+              </div>
+            </div>
+
+            <div class="step reveal">
+              <div class="step-number">4</div>
+              <div>
+                <h3>Instalação, testes e entrega</h3>
+                <p>
+                  Realizamos a instalação dos painéis, inversores e proteções, testamos o sistema
+                  e acompanhamos a entrada em operação da sua usina residencial.
+                </p>
+              </div>
+            </div>
+
+            <div class="step highlight-step reveal">
+              <div class="step-number"><i class="fa-solid fa-message"></i></div>
+              <div>
+                <h3>Você acompanha tudo pelo WhatsApp</h3>
+                <p>
+                  Atualizações, fotos da obra, dúvidas e orientações – tudo centralizado no seu WhatsApp,
+                  do começo ao fim do projeto.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- VISUAL DO PROCESSO COM BACKGROUND -->
+          <div
+            class="process-visual parallax-tilt reveal"
+            aria-label="Equipe instalando sistema fotovoltaico em telhado residencial"
+          >
+            <div class="process-badge">
+              <i class="fa-solid fa-circle-check"></i>
+              Obra sob responsabilidade técnica
+            </div>
+
+            <div class="process-mini-card">
+              <span>Sistema residencial Engtec</span>
+              <strong>5,5 kWp instalado</strong>
+              <p>Economia média de R$ 480,00 por mês nesta residência.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         DEPOIMENTOS
+    =================================================== -->
+    <section id="depoimentos">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">Prova real</span>
+          <h2>Quem confiou na Engtec já está gerando a própria energia</h2>
+          <p>
+            Alguns relatos de residências atendidas com projeto elétrico, adequação e sistema
+            fotovoltaico instalados pela Engtec.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial reveal">
+            <div class="testimonial-header">
+              <div class="avatar">S</div>
+              <div>
+                <strong>Família Silva</strong>
+                <span>Residência – sistema conectado à rede</span>
+              </div>
+            </div>
+            <p>
+              “A Engtec cuidou de tudo, desde as adequações elétricas até a homologação.
+              Hoje pagamos uma taxa mínima de energia. O acompanhamento foi excelente.”
+            </p>
+            <div class="testimonial-footer">
+              <span class="rating">
+                <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+              <span class="badge-soft">Conta reduzida em ~90%</span>
+            </div>
+          </article>
+
+          <article class="testimonial reveal">
+            <div class="testimonial-header">
+              <div class="avatar">M</div>
+              <div>
+                <strong>Marcos e Ana</strong>
+                <span>Casa térrea – adequação + solar</span>
+              </div>
+            </div>
+            <p>
+              “Tínhamos muitas dúvidas sobre segurança e sobre a parte elétrica do imóvel.
+              A presença do engenheiro em todas as etapas nos deu muita confiança.”
+            </p>
+            <div class="testimonial-footer">
+              <span class="rating">
+                <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </span>
+              <span class="badge-soft">Obra acompanhada de perto</span>
+            </div>
+          </article>
+
+          <article class="testimonial reveal">
+            <div class="testimonial-header">
+              <div class="avatar">P</div>
+              <div>
+                <strong>Patrícia</strong>
+                <span>Residência – projeto sob medida</span>
+              </div>
+            </div>
+            <p>
+              “Recebi todas as explicações pelo WhatsApp, com simulações e projeções.
+              Hoje sabemos exatamente quanto vamos gastar por mês com energia.”
+            </p>
+            <div class="testimonial-footer">
+              <span class="rating">
+                <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+              <span class="badge-soft">Previsibilidade e tranquilidade</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         CTA + CONTATO
+    =================================================== -->
+    <section id="contato">
+      <div class="container cta">
+        <div class="cta-box reveal">
+          <div class="cta-header">
+            <span class="section-kicker">Próximo passo</span>
+            <h2>Envie sua conta de luz e receba um estudo gratuito</h2>
+            <p>
+              Em até 24 horas, você recebe uma análise personalizada com previsão de economia,
+              tamanho do sistema e prazo estimado de retorno do investimento.
+            </p>
+          </div>
+
+          <!-- BOTÕES DE CONTATO -->
+          <div class="cta-actions">
+            <!-- TODO: Ajustar número de telefone -->
+            <a
+              href="https://wa.me/5511999999999?text=Olá,%20segue%20minha%20conta%20de%20energia%20para%20análise%20de%20energia%20solar."
+              target="_blank"
+              class="btn-primary"
+            >
+              <span class="btn-primary-glow"></span>
+              <i class="fa-brands fa-whatsapp"></i>
+              Enviar conta pelo WhatsApp
+            </a>
+
+            <!-- TODO: Ajustar e-mail se necessário -->
+            <a
+              href="mailto:contato@engtecsolucoes.com.br?subject=Orçamento%20Energia%20Solar%20Residencial&body=Olá,%20gostaria%20de%20um%20estudo%20para%20instalar%20energia%20solar%20na%20minha%20residência.%20Segue%20em%20anexo%20minha%20conta%20de%20luz."
+              class="btn-ghost"
+            >
+              <i class="fa-regular fa-envelope"></i>
+              Enviar por e-mail
+            </a>
+          </div>
+
+          <p class="cta-sub">
+            Nenhum compromisso. Seus dados são utilizados apenas para elaboração do estudo e contato comercial.
+          </p>
+
+          <!-- FORMULÁRIO PARA DETALHAR O PROJETO -->
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <input type="text" id="nome" placeholder="Seu nome completo" required />
+              <input type="email" id="email" placeholder="Seu melhor e-mail" required />
+            </div>
+            <div class="form-row">
+              <input type="tel" id="telefone" placeholder="WhatsApp (com DDD)" />
+              <input type="text" id="cidade" placeholder="Cidade/Estado" />
+            </div>
+            <textarea
+              id="mensagem"
+              placeholder="Conte rapidamente seu consumo médio, tipo de telhado e qualquer informação importante."
+              required
+            ></textarea>
+
+            <button type="submit" class="btn-primary btn-full">
+              <span class="btn-primary-glow"></span>
+              <i class="fa-regular fa-paper-plane"></i>
+              Enviar detalhes para análise
+            </button>
+          </form>
+
+          <div class="cta-badges">
+            <span><i class="fa-solid fa-lock"></i> Dados protegidos</span>
+            <span><i class="fa-solid fa-clock"></i> Resposta em até 24h úteis</span>
+          </div>
+        </div>
+
+        <!-- IMAGEM FINAL COM BACKGROUND -->
+        <div class="cta-image-wrapper reveal" aria-label="Residência com painéis solares no telhado">
+          <div class="cta-image-overlay">
+            <div class="cta-image-text">
+              <span>Energia solar na prática</span>
+              <strong>Sua casa produzindo a própria energia, todos os dias.</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================================================
+       FOOTER
+  =================================================== -->
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        © <span id="year"></span> Engtec Soluções – Engenharia Elétrica & Energia Solar.
+      </div>
+      <div class="footer-links">
+        <span>Site demonstrativo inspirado em</span>
+        <a
+          href="https://http-www-engtecsolucoes-com-br-http.lovable.app/#home"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Engtec Soluções
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS principal -->
+  <script src="script.js"></script>
+</body>
+</html>
