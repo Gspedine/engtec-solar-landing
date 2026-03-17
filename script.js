@@ -46,7 +46,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
     e.preventDefault();
 
-    const headerOffset = 70;
+    const headerOffset = 76;
     const elementPosition = el.offsetTop;
     const offsetPosition = elementPosition - headerOffset;
 

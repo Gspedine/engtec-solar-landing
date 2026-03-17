@@ -237,7 +237,7 @@ main {
   background-image: url("https://images.pexels.com/photos/4254168/pexels-photo-4254168.jpeg?auto=compress&cs=tinysrgb&w=1600");
   background-size: cover;
   background-position: center;
-  filter: brightness(0.9); /* mais claro para combinar com tema claro */
+  filter: brightness(0.9);
   transform: scale(1.05);
 }
 
@@ -437,13 +437,14 @@ main {
   transform: translateY(12px);
 }
 
+/* AJUSTE: overlay mais forte para legibilidade */
 .hero-card-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(0, 43, 74, 0.96),
-    rgba(0, 43, 74, 0.55),
+    rgba(0, 43, 74, 0.98),
+    rgba(0, 43, 74, 0.6),
     transparent 60%
   );
 }
@@ -587,7 +588,6 @@ section {
   padding: 70px 0;
 }
 
-/* alternância suave em tons claros */
 section:nth-of-type(2n) {
   background: radial-gradient(circle at 0 0, rgba(39, 199, 255, 0.08), #ffffff);
 }
@@ -977,6 +977,8 @@ section:nth-of-type(2n + 1) {
   gap: 12px;
 }
 
+/* AJUSTE: reforço visual de CTA secundário já é ghost, manter padrão em todo o site via classe reutilizada */
+
 .cta-sub {
   margin-top: 10px;
   font-size: 11px;
@@ -1111,7 +1113,7 @@ section:nth-of-type(2n + 1) {
   gap: 8px;
   padding: 10px 16px;
   border-radius: 999px;
-  background: #22c55e; /* mantém o verde oficial do WhatsApp */
+  background: #22c55e;
   color: #052e16;
   font-size: 13px;
   font-weight: 600;
@@ -1176,6 +1178,17 @@ footer {
 .parallax-tilt {
   transition: transform 0.2s ease-out;
   transform-style: preserve-3d;
+}
+
+/* =====================================================
+   ESTADOS DE FOCO (ACESSIBILIDADE)
+===================================================== */
+.btn-primary:focus-visible,
+.btn-ghost:focus-visible,
+.btn-header:focus-visible,
+.whatsapp-float a:focus-visible {
+  outline: 2px solid var(--ciano-destaque); /* AJUSTE: foco visível */
+  outline-offset: 2px;
 }
 
 /* =====================================================
@@ -1253,6 +1266,13 @@ footer {
   .contact-form .form-row {
     grid-template-columns: minmax(0, 1fr);
   }
+
+  /* AJUSTE OPCIONAL: se quiser, pode forçar 1 coluna em benefícios/depoimentos também
+  .benefits-grid,
+  .testimonials-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  */
 }
 
 /* até 640px (celulares pequenos) */
@@ -1268,6 +1288,11 @@ footer {
 
   .hero-metrics {
     gap: 14px;
+    margin-bottom: 12px; /* AJUSTE: menos altura */
+  }
+
+  .hero-cta {
+    margin-bottom: 12px; /* AJUSTE: menos altura */
   }
 
   .hero-card {
@@ -1280,5 +1305,15 @@ footer {
 
   .whatsapp-float a span {
     display: none;
+  }
+
+  /* AJUSTE: imagens menos altas para reduzir scroll */
+  .process-visual {
+    min-height: 200px;
+  }
+
+  .cta-image-wrapper {
+    min-height: 180px;
+    max-height: 260px;
   }
 }
