@@ -148,7 +148,7 @@ button {
 }
 
 .nav a {
-  color: rgba(248, 250, 252, 0.9);
+  color: black;
   position: relative;
   padding-bottom: 4px;
   transition: color 0.18s ease;
@@ -179,7 +179,7 @@ button {
   padding: 8px 18px;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--cta-bg), var(--ciano-destaque));
-  color: var(--cta-texto);
+  color: var(--texto-principal);
   font-size: 13px;
   font-weight: 600;
   display: inline-flex;
